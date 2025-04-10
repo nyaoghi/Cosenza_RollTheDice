@@ -26,8 +26,12 @@ class MainActivity : AppCompatActivity() {
 
             var mioIntent : Intent = Intent(this, SecondActivity::class.java)
            var mioRandom = (1..6).random()
-            mioIntent.putExtra("MESSAGE", value: "Numero Estratto:  $mioRandom")
+            mioIntent.putExtra("MESSAGE", value: "Numero Estratto:  $mioRandom"
+            mioIntent.putExtra("RANDOM", "NUMERO ESTRATTO: $mioRandom")
+            mioIntent.putExtra("RANDOM", mioRandom)
+
             startActivity(mioIntent)
+
         })
 
         //intent per passare da un'activity all'altra, messaggi per
