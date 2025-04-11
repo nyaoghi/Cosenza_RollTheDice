@@ -41,4 +41,5 @@ class SecondActivity : AppCompatActivity() {
         textView.text = msg
 
     }
+    //commento per vedere se ho risolto il problema del push
 }
