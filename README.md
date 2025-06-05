@@ -1,6 +1,7 @@
 # Cosenza RollTheDice
 
-Un'app Android semplice e divertente per simulare il lancio di un dado! Genera un numero casuale tra 1 e 6, mostra la faccia del dado corrispondente e comunica all’utente se ha vinto (numero pari) o perso (numero dispari).
+Applicazione Android che simula il lancio di un dado.
+Genera un numero casuale tra 1 e 6, mostra la faccia del dado corrispondente e comunica all’utente se ha vinto (numero pari) o perso (numero dispari).
 
 ## Linguaggi e strumenti usati
 
