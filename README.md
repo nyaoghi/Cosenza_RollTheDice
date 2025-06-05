@@ -10,20 +10,20 @@ Genera un numero casuale tra 1 e 6, mostra la faccia del dado corrispondente e c
 - Intent e passaggio di dati tra Activity
 - Animazioni (fade in/out)
 
----
+--
 
 ## Funzionalità
 
 - Generazione di un numero casuale da 1 a 6
 - Visualizzazione grafica del dado
 - Messaggio di vittoria o sconfitta:
-  - Numeri **pari** = vittoria 🎉
-  - Numeri **dispari** = sconfitta 😢
+  - Numeri **pari** = vittoria 
+  - Numeri **dispari** = sconfitta 
 - Navigazione tra le activity
 - Transizioni animate tra schermate
 - Pulsante per tornare alla home
 
----
+--
 
 ## Struttura dell'app
 
@@ -33,7 +33,7 @@ Genera un numero casuale tra 1 e 6, mostra la faccia del dado corrispondente e c
 | **SecondActivity**  | Mostra la faccia del dado e il numero estratto |
 | **ResultActivity**  | Comunica il risultato (pari/dispari) e fornisce un bottone per tornare alla home |
 
----
+--
 
 ## UI Design
 
@@ -41,7 +41,7 @@ Genera un numero casuale tra 1 e 6, mostra la faccia del dado corrispondente e c
 - Layout responsive con `ConstraintLayout`
 - Animazioni di transizione (`fade_in` / `fade_out`)
 
----
+--
 
 ## Come usarlo
 
