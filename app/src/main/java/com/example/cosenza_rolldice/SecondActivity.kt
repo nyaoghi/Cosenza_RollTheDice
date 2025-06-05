@@ -1,10 +1,14 @@
 package com.example.cosenza_rolldice
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -40,6 +44,21 @@ class SecondActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textViewActivitySecond)
         textView.text = msg
 
-    }
+
+        var buttonShowResult : Button = findViewById(R.id.buttonShowResult)
+        buttonShowResult.setOnClickListener(View.OnClickListener {
+            var toast = Toast.makeText(this, "Visulizza i risultati", Toast.LENGTH_LONG)
+            toast.show()
+
+
+        val buttonShowResult = findViewById<Button>(R.id.buttonShowResult)
+        buttonShowResult.setOnClickListener {
+            val intent: Intent = Intent(this, ThirdActivity::class.java)
+            intent.putExtra("RANDOM", random)
+            startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+        }
+
+    
     //commento per vedere se ho risolto il problema del push
 }
