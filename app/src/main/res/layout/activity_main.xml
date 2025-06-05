@@ -5,13 +5,19 @@
     android:id="@+id/textViewActivitySecond"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundTint="#A92525"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="246dp"
+        android:layout_height="80dp"
+        android:height="50px"
+        android:fontFamily="@font/aclonica"
         android:text="Guess the number"
+        android:textAlignment="center"
+        android:textColor="#4AE0B3"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,12 +29,17 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:drawableTint="#E91E63"
         android:text="GUESS"
+        android:textColorLink="#9C27B0"
+        app:iconTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="#AAA32A" />
 
     <ImageView
         android:id="@+id/imageView"
